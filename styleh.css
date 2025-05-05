@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav bar section */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+    display: inline;
+    background-color: white;
+}
+
+.navlinks{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 5%;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header section */
+.hero{
+    background-image: url('images/ghost_1.jpg');
+    height: 90vh;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+
+.since{
+    color: orange;
+    font-style: italic;
+}
+
+.h01{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.h02{
+    color: green;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtext{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.herobtn{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+.herobtn:hover{
+    background-color: darkorange;
+}
+
+/* specality  section*/
+.specials{
+    text-align: center;
+    padding: 40px 0px;
+}
+.specials h2{
+    font-size: 2rem;
+    background: linear-gradient(to right, orange 40%, green 60%);
+    -webkit-background-clip: text; /*!important*/
+    -webkit-text-fill-color: transparent;
+}
+.spcl_cotn{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+}
+
+.specialty img{
+    width: 100%;
+    /* height: 180px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 2px solid orange;
+    /* transition: transform 0.3s ease; */
+}
+.specialty{
+    box-shadow: 0 9px 10px gray;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.specialty:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.specialty p{
+    margin-bottom: 15px;
+}
+
+/* about section */
+.about_sec{
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #f38313;
+}
+.about_contant{
+    padding-right: 40px;
+    max-width: 50%;
+}
+.about_contant p{
+    color: black;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.about_image img{
+    border-radius: 50%;
+    height: 300px;
+    width: 400px;
+}
+
+/* testimonial */
+.testimonial img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+
+}
+.testimonials{
+    display: flex;
+    padding: 50px 20px;
+}
+.testimonial{
+    text-align: center;
+}
+.quote{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.name{
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.2rem;
+}
+
+/* footer section */
+.social_icons img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+}
+.footer_contener{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 15px;
+    padding: 10px 20px;
+    position: relative;
+    left: 50px;
+}
+.footer_section h4{
+    color: orange;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-left: 300px;
+}
+.footer_section p{
+    padding: 5px 0;
+    cursor: pointer;
+    padding-left: 300px;
+}
+.call_btn{
+    background-color: orange;
+    color: whitesmoke;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.call_btn:hover{
+    background-color: darkorange;
+}
+.footer_section{
+    flex: 1;
+    margin: 30px;
+
+}
+.social_icons{
+    margin-top: 20px;
+}
+
+/* responsive */
+@media (min-width: 950px){
+.footer_section h4,
+.footer_section p{
+    padding-left: 140px;
+}
+}
+
+@media screen and (max-width: 580px){
+    .navbar{
+        flex-direction: column;
+        padding: 10px 0;
+
+    }
+    .navlinks{
+        padding: 5px 0;
+    }
+    .navlinks a:hover{
+        text-decoration: underline;
+        color: blue;
+        font-weight: bold;
+    }
+    .hero_content h1{
+        font-size: 1.8rem;
+    }
+    .subtext{
+        font-size: 0.9rem;
+    }
+    .spcl_cotn{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about_sec{
+        flex-direction: column;
+    }
+    .about_image img{
+        height: 300px;
+        width: 300px;
+        padding-top: 10px;
+    }
+    .about_contant{
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .testimonials{
+        flex-direction: column;
+    }
+    .testimonial{
+        margin-bottom: 20px;
+    }
+    .footer_contener{
+        flex-direction: column;
+    }
+    .footer_section p,
+    .footer_section h4{
+        position: relative;
+        right: 35%;
+    }
+    .footer_logo{
+        left: 0;
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (min-width:581px) and (max-width: 950px){
+    .hero_content h1{
+        font-size: 2.3rem;
+    }
+    .subtext{
+        font-size: 1rem;
+    }
+    .navlinks{
+        margin-right: 30px;
+    }
+    .spcl_cotn{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .specialty{
+        width: 45%;
+    }
+    .about_sec{
+        flex-direction: column;
+    }
+    .about_image img{
+        height: 250px;
+        width: 300px;
+        padding-top: 15px;
+    }
+    .about_contant{
+        max-width: 100%;
+        padding-right: 0;
+        max-width: 90%;
+    }
+    .testimonials{
+        flex-wrap: wrap;
+    }
+    .testimonial{
+        margin-bottom: 20px;
+    }
+    .footer_contener{
+        flex-direction: column;
+    }
+    .footer_section h4,
+    .footer_section p{
+        padding-left: 0;
+    }
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .footer_logo{
+        left: 0;
+    }
+}
